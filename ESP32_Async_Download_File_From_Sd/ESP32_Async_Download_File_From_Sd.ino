@@ -4,8 +4,8 @@
 #include <SD.h>
 #include <SPI.h>
   
-const char* ssid = "CompEng";
-const char* password = "h98a2k3?12.";
+const char* ssid = "yourssid";
+const char* password = "yourpassword";
 
 AsyncWebServer server(80);
   
