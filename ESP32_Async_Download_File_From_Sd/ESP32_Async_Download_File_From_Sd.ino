@@ -48,6 +48,8 @@ void setup(){
     // eger problem yoksa yapmaya gerek yok
     SD.end();
     SD.begin();
+    // true dememizin nedeni cihazda indirme isleminin gerceklesecek olmasi
+    // eger istekte bulunan cihazda bu dosya indirilecekse en sondaki parametre true olmalidir
     request->send(SD, "/data.csv", "text/csv", true);
   });
    
